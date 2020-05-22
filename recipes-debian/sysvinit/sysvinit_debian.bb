@@ -33,7 +33,7 @@ SRC_URI += " \
 
 B = "${S}/src"
 
-inherit update-alternatives distro_features_check
+inherit update-alternatives features_check
 DEPENDS_append = " update-rc.d-native base-passwd virtual/crypt"
 
 REQUIRED_DISTRO_FEATURES = "sysvinit"

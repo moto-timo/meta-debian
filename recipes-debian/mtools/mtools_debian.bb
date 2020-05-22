@@ -31,7 +31,7 @@ RRECOMMENDS_${PN}_libc-glibc = "\
 	glibc-gconv-ibm869 \
 	"
 
-inherit autotools texinfo distro_features_check
+inherit autotools texinfo features_check
 
 EXTRA_OECONF = "--without-x"
 

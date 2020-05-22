@@ -14,7 +14,7 @@ DEPENDS = "libpam"
 DEBIAN_UNPACK_DIR = "${WORKDIR}/google-authenticator"
 S = "${DEBIAN_UNPACK_DIR}/libpam"
 
-inherit autotools distro_features_check
+inherit autotools features_check
 
 EXTRA_OECONF += "--libdir=${base_libdir}"
 
